@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/css/res.css">
+  <title>Sentiment Analysis Results</title>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Sentiment Analysis Results for {{ data['query'] }}</h2>
+
+    <!-- Display the sentiment counts -->
+    {% for sentiment, count in data['sentiment_counts'].items() %}
+      <p>{{ sentiment }}: {{ count }}</p>
+    {% endfor %}
+
+    <!-- Display the topics -->
+    {% for topic in data['topics'] %}
+      <p>{{ topic }}</p>
+    {% endfor %}
+
+    <!-- Display the plot -->
+    <img src="{{ plot_url }}" alt="Plot">
+  </div>
+
+</body>
+</html>

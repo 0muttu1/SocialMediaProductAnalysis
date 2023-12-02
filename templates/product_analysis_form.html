@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+  <title>Product Analysis Form</title>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Product Analysis Form</h2>
+
+    <form action="/productanalysis" method="post" class="form">
+      <label for="query">Query:</label><br>
+      <input type="text" id="query" name="query" class="input"><br>
+
+      <label for="nos">Number of thousands of comments:</label><br>
+      <input type="text" id="nos" name="nos" class="input"><br>
+
+      <input type="submit" value="Submit" class="submit-btn">
+    </form>
+
+    <h2>Results</h2>
+    <p>Result: [{{ result }}]</p>
+  </div>
+
+</body>
+</html>
