@@ -17,11 +17,7 @@ Flask Application Creation: Develop your Flask application and save it as a .py 
 
 Local Testing: Run your application locally to verify its functionality.
 
-Deployment Preparation: Prepare your application for deployment by setting up a requirements.txt file, a Procfile, and a .gitignore file.
-
-Application Deployment: Employ a platform like Heroku, AWS, or Google Cloud to deploy your Flask application. Follow the platform's specific instructions for deployment.
-
-Note that the deployment process may vary depending on the chosen platform.
+Deployment Preparation: Add APIs Key to your system environment/ create a .env file.
 
 
 License
